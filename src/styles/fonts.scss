@@ -1,0 +1,65 @@
+// Start Font-Face
+@font-face {
+  font-family: Outfit-SemiBold;
+  src: url("../assets/font/Outfit-SemiBold.ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Outfit-Bold;
+  src: url("../assets/font/Outfit-Bold.ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Outfit-Medium;
+  src: url("../assets/font/Outfit-Medium.ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Outfit-Regular;
+  src: url("../assets/font/Outfit-Regular.ttf");
+  font-display: swap;
+}
+
+
+
+
+// Bold
+.font-Bold-s18 {
+  font-size: 18px !important;
+  font-family: Outfit-Bold;
+}
+.font-Bold-s20 {
+  font-size: 20px !important;
+  font-family: Outfit-Bold;
+}
+.font-Bold-s22 {
+  font-size: 22px !important;
+  font-family: Outfit-Bold;
+}
+.font-Bold-s30 {
+  font-size: 30px !important;
+  font-family: Outfit-Bold;
+}
+
+//  SemiBold
+.font-SemiBold-s20 {
+  font-size: 20px !important;
+  font-family: Outfit-SemiBold;
+}
+.font-SemiBold-s26 {
+  font-size: 26px !important;
+  font-family: Outfit-SemiBold;
+}
+.font-SemiBold-s28 {
+  font-size: 28px !important;
+  font-family: Outfit-SemiBold;
+}
+
+// Medium
+.font-Medium-s24 {
+  font-size: 24px !important;
+  font-family: Outfit-Medium;
+}

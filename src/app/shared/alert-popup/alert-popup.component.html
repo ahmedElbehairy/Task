@@ -1,0 +1,19 @@
+<div class="modal fade" id="alertPopup" tabindex="-1" aria-labelledby="alertPopupLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body p5">
+            <div class="d-flex flex-column justify-content-center align-items-center gap-3">
+                <i class="d-flex mb-3 IC-alert iC-S92-81 img-Background-Cover"></i>
+                <p class="m-0 font-SemiBold-s26 text-black">Delete This User ?</p>
+                <p class="m-0 font-Medium-s24 text-Gray85">Are you sure, You want to delete this User ?</p>
+            </div>
+            <div class="d-flex mt-5 justify-content-center align-items-center gap-4">
+                <button type="button" data-bs-dismiss="modal"
+                class="btn bg-main py-3 text-white w-25" (click)="yes.emit(id)">Yes</button>  
+                <button type="button" data-bs-dismiss="modal"
+                class="btn bg-support1 py-3 text-white w-25">No</button>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>

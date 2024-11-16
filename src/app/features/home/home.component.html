@@ -1,0 +1,23 @@
+<div class="py-3">
+  <app-table
+    [displayedColumn]="displayedColumns"
+    [ELEMENT_DATA]="Users"
+    [pagination]="Pagination"
+    (Delete)="deleteUser($event)"
+    (ManyDelete)="deleteManyUsers($event)"
+  ></app-table>
+</div>
+
+<ngx-spinner
+  bdColor="rgba(0, 0, 0, 0.8)"
+  size="large"
+  color="#fff"
+  type="line-spin-fade"
+  [fullScreen]="true"
+  ><p style="color: white">Loading...</p></ngx-spinner
+>
+
+<app-snack-bar
+  [errorMessage]="errorMessage"
+  [successMessage]="successMessage"
+></app-snack-bar>

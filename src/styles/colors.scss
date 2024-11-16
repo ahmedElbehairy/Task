@@ -1,0 +1,83 @@
+$main: #222222;
+$secondary: #787878;
+$support1: #003048;
+$support2: #273043;
+$white: #fff;
+$gray: #F5F5F5;
+$Gray85: #777777;
+$Gray6B: #5c5e6b;
+
+
+// START === Background Color
+.bg-Inherit {
+  background-color: inherit;
+}
+
+.bg-transparent {
+  background-color: transparent;
+}
+
+.bg-main {
+  background-color: $main !important;
+}
+
+.bg-secondary {
+  background-color: $secondary !important;
+}
+
+.bg-support1 {
+  background-color: $support1 !important;
+}
+
+.bg-support2 {
+  background-color: $support2 !important;
+}
+
+.bg-white {
+  background-color: $white !important;
+}
+
+.bg-gray {
+  background-color: $gray;
+}
+
+.bg-Gray85 {
+  background-color: $Gray85;
+}
+
+
+// END === Background Color
+
+// START === Text Color
+.text-main {
+  color: $main !important;
+}
+
+.text-secondary {
+  color: $secondary !important;
+}
+
+.text-support1 {
+  color: $support1 !important;
+}
+
+.text-support2 {
+  color: $support2 !important;
+}
+
+.text-white {
+  color: $white !important;
+}
+
+.text-gray{
+  color: $gray !important;
+}
+
+.text-Gray85{
+  color: $Gray85 !important;
+}
+
+
+// END === Text Color
+
+

@@ -1,0 +1,44 @@
+<div class="border-F-radius-s8 overflow-hidden border-gray-s2 mt-4 w-100" >
+    <form class="w-100 divShadow p-5 h-100" #product="ngForm"
+    (ngSubmit)="ngSubmit(product.value)"> 
+        <div class="mt-4 row pt-3">
+            <div class="d-flex col-4 mb-4 px-0~ gap-2 flex-column" *ngFor="let input of inputForm ; index as i">
+                <label [for]="input.id">{{ input.label }}</label>
+                <input
+                  type="text"
+                  [disabled]="input.id == 'id' ? true : false"
+                  [id]="input.id"
+                  [placeholder]="input.placeHolder"
+                  [(ngModel)]="input.ng_model"
+                  (keypress)="numberOnly($event, input.id, i)"
+                  [name]="input.id"
+                  class="border-F-radius-s8 w-100 px-3 py-2 border-gray-s2"
+                />
+                <p class="m-0 CC-alert">{{ input.errorMessage }}</p>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center mt-5">
+            <button
+                type="submit"
+                class="btn px-5 bg-support1 py-3 text-white justify-content-center d-flex align-items-center gap-2"
+                >
+                Save 
+          </button>
+        </div>
+    </form>
+</div>
+
+
+<ngx-spinner
+bdColor="rgba(0, 0, 0, 0.8)"
+size="large"
+color="#fff"
+type="line-spin-fade"
+[fullScreen]="true"
+><p style="color: white">Loading...</p></ngx-spinner
+>
+
+<app-snack-bar
+[errorMessage]="errorMessage"
+[successMessage]="successMessage"
+></app-snack-bar>
